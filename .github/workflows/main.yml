@@ -16,13 +16,12 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 54.209.2.134
-          username: root
+          username: ec2-user
           key: ${{secrets.SSH_PRIVATE_KEY}}
           port: 22
           script: |
             nvm use 16.20
-            cd ../home/ec2-user/dash3/
-            ls -al
+            cd dash3
             git stash
             git pull
             npm install
