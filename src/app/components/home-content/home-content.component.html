@@ -1,4 +1,4 @@
-<div class="next-steps my-5">
+<div class="next-steps my-5" *ngIf="auth.isAuthenticated$ | async">
     <h2 class="my-5 text-center">What is this?</h2>
 
     <div class="row">

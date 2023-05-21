@@ -1,0 +1,27 @@
+<div class="liverpool">
+    <ng-container *ngIf="away">
+      <div class="teamBadge">
+        <img [src]="away.logo" alt="new" />
+        <ng-container *ngIf="away.name === 'Austin'; else otherTeamName">
+          <p>{{rank}}. {{away.name}}</p>
+        </ng-container>
+        <ng-template #otherTeamName>
+          <p>{{away.name}}</p>
+        </ng-template>
+      </div>
+    </ng-container>
+    @
+    <ng-container *ngIf="home">
+      <div class="teamBadge">
+        <img [src]="home.logo" alt="new" />
+        <ng-container *ngIf="home.name === 'Austin'; else otherTeamName">
+          <p>{{rank}}. {{home.name}}</p>
+        </ng-container>
+        <ng-template #otherTeamName>
+          <p>{{home.name}}</p>
+        </ng-template>
+      </div>
+    </ng-container>
+    <h4 *ngIf="date">{{date}}</h4>
+    <h4 *ngIf="!date">not loaded</h4>
+  </div>

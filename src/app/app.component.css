@@ -1,0 +1,56 @@
+.cell {
+    flex: 1 0 30%; /* don't grow, don't shrink, width */
+    height: 28vh;
+    /* border: 1px groove black; */
+    background-color: transparent;
+    text-align: center;
+    /* padding-top: 45%; */
+}
+.cellLong {
+    flex: 1 0 99%; /* don't grow, don't shrink, width */
+    height: 28vh;
+    /* margin: 3% 0 0 0; */
+    /* border: 2px groove black; */
+    background-color: transparent;
+}
+.grid {
+    display: flex; /* establish flex container */
+    flex-wrap: wrap; /* enable flex items to wrap */
+    justify-content: space-around;
+}
+.liverpool {
+    color: black;
+    font-size: 1.5em;
+    margin: 15% 10% 0 10%;
+}
+.bibleVerse {
+    color: white;
+    font-size: 1.5em;
+    margin: 2% 10% 0 10%;
+}
+.sports {
+    color: white;
+    font-size: 1.5em;
+    margin: 15% 10% 0 10%;
+}
+.crypto {
+    color: white;
+    font-size: 1.5em;
+    margin: 10% 0 0 0;
+}
+.teamBadge {
+    margin: auto;
+    display: inline-block;
+}
+.teamBadge p {
+    display: inline;
+}
+.teamBadge img {
+    display: block;
+    margin: auto;
+}
+.time {
+    color: white;
+    font-size: 2.2em;
+    margin: 20% 10% 10% 10%;
+}
