@@ -3,7 +3,11 @@
 </div>
 
 <ng-template #loaded>
-  <app-grid></app-grid>
-  <app-home-content></app-home-content>
-  <app-guest></app-guest>
+  <div *ngIf="auth.isAuthenticated$ | async">
+    <app-grid></app-grid>  
+  </div>
+  <div *ngIf="(auth.isAuthenticated$ | async) === false">
+    <app-guest></app-guest>
+  </div>
+  
 </ng-template>
