@@ -44,6 +44,12 @@ app.get('/api', checkJwt, (req, res) => {
   });
 });
 
+app.get('/api/user', checkJwt, (req, res) => {
+  res.send({
+    msg: 'Im serving up user data',
+  });
+});
+
 const port = process.env.API_SERVER_PORT || 3001;
 
 app.listen(port, () => console.log(`Api started on port ${port}`));
