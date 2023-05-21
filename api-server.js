@@ -23,7 +23,7 @@ app.use(morgan('dev'));
 app.use(helmet());
 app.use(
   cors({
-    origin: authConfig.appUri,
+    origin: "https://54.209.2.134",
   })
 );
 
