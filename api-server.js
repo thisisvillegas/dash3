@@ -23,7 +23,7 @@ app.use(morgan('dev'));
 app.use(helmet());
 app.use(
   cors({
-    origin: "https://54.209.2.134",
+    origin: 'https://thisisvillegas.com',
   })
 );
 
