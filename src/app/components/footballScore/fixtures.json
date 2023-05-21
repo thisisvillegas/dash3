@@ -1,0 +1,85 @@
+{
+    "get": "fixtures",
+    "parameters": {
+        "season": "2023",
+        "timezone": "America\/Chicago",
+        "next": "1",
+        "team": "16489"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "fixture": {
+                "id": 1026894,
+                "referee": null,
+                "timezone": "America\/Chicago",
+                "date": "2023-05-24T20:00:00-05:00",
+                "timestamp": 1684976400,
+                "periods": {
+                    "first": null,
+                    "second": null
+                },
+                "venue": {
+                    "id": 11535,
+                    "name": "Q2 Stadium",
+                    "city": "Austin, Texas"
+                },
+                "status": {
+                    "long": "Not Started",
+                    "short": "NS",
+                    "elapsed": null
+                }
+            },
+            "league": {
+                "id": 257,
+                "name": "US Open Cup",
+                "country": "USA",
+                "logo": "https:\/\/media-2.api-sports.io\/football\/leagues\/257.png",
+                "flag": "https:\/\/media-2.api-sports.io\/flags\/us.svg",
+                "season": 2023,
+                "round": "Round of 16"
+            },
+            "teams": {
+                "home": {
+                    "id": 16489,
+                    "name": "Austin",
+                    "logo": "https:\/\/media-2.api-sports.io\/football\/teams\/16489.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 1607,
+                    "name": "Chicago Fire",
+                    "logo": "https:\/\/media-2.api-sports.io\/football\/teams\/1607.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": null,
+                "away": null
+            },
+            "score": {
+                "halftime": {
+                    "home": null,
+                    "away": null
+                },
+                "fulltime": {
+                    "home": null,
+                    "away": null
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        }
+    ]
+}

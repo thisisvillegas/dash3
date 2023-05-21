@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
 import moment from 'moment';
+import standings from 'src/app/components/footballScore/standings.json';
+import fixture from 'src/app/components/footballScore/fixtures.json';
+import { environment } from 'src/environments/environment';
 
 let rapidapi = 'e4107e33e5msh76c70dcc39cafacp14663bjsn1ede35f0193b'
+
+
 
 @Component({
   selector: 'app-footballscore',
@@ -20,6 +25,15 @@ export class FootballScoreComponent implements OnInit {
   date: string;
 
   ngOnInit() {
+
+    if (environment.production == false) {
+      console.log('production is false, stubbing data')
+      this.away = fixture.response[0].teams.away;
+      this.home = fixture.response[0].teams.home;
+      this.date = moment(fixture.response[0].fixture.date).format('MM/DD/YYYY hh:mm A');
+      this.rank = standings.response[0].league.standings[0][0].rank;
+    } else {
+      console.log('we should not be here')
     axios({
       method: 'GET',
       url: 'https://api-football-v1.p.rapidapi.com/v3/fixtures',
@@ -61,4 +75,5 @@ export class FootballScoreComponent implements OnInit {
         console.log(error);
       });
   }
+}
 }

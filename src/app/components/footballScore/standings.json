@@ -1,0 +1,75 @@
+{
+    "get": "standings",
+    "parameters": {
+        "league": "253",
+        "season": "2023",
+        "team": "16489"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "league": {
+                "id": 253,
+                "name": "Major League Soccer",
+                "country": "USA",
+                "logo": "https:\/\/media-3.api-sports.io\/football\/leagues\/253.png",
+                "flag": "https:\/\/media-1.api-sports.io\/flags\/us.svg",
+                "season": 2023,
+                "standings": [
+                    [
+                        {
+                            "rank": 10,
+                            "team": {
+                                "id": 16489,
+                                "name": "Austin",
+                                "logo": "https:\/\/media-3.api-sports.io\/football\/teams\/16489.png"
+                            },
+                            "points": 13,
+                            "goalsDiff": -6,
+                            "group": "Western Conference",
+                            "form": "WLDDL",
+                            "status": "up",
+                            "description": null,
+                            "all": {
+                                "played": 12,
+                                "win": 3,
+                                "draw": 4,
+                                "lose": 5,
+                                "goals": {
+                                    "for": 12,
+                                    "against": 18
+                                }
+                            },
+                            "home": {
+                                "played": 6,
+                                "win": 1,
+                                "draw": 3,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 6,
+                                    "against": 7
+                                }
+                            },
+                            "away": {
+                                "played": 6,
+                                "win": 2,
+                                "draw": 1,
+                                "lose": 3,
+                                "goals": {
+                                    "for": 6,
+                                    "against": 11
+                                }
+                            },
+                            "update": "2023-05-20T00:00:00+00:00"
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}
