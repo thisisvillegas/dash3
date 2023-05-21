@@ -24,7 +24,7 @@ jobs:
             cd dash3
             git stash
             git pull
-            npm install
+            npm install --force
             ng build --configration production
             sudo cp -r dist/login-demo/* /usr/share/nginx/html
             echo "moved file"
