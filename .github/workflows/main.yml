@@ -22,6 +22,7 @@ jobs:
           script: |
             nvm use 16.20
             cd ../home/ec2-user/dash3/
+            ls -al
             git stash
             git pull
             npm install
