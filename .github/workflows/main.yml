@@ -21,11 +21,11 @@ jobs:
           port: 22
           script: |
             nvm use 16.20
-            cd dash3
+            cd ../home/ec2-user/dash3/
             git stash
             git pull
             npm install
-            ng build
+            ng build --configration production
             sudo cp -r dist/login-demo/* /usr/share/nginx/html
             echo "moved file"
             sudo systemctl restart nginx
